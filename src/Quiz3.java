@@ -23,6 +23,9 @@ public class Quiz3 {
         //Se imprime nuevamente
         System.out.println("\nEl Queue se imprime nuevamente");
         printQueue(queue);
+        //Note que los resultados son los esperados, al hacer dequeue se elimina el primer elemento en ser agregado osea el 5
+        //De igual modo, al hacer enqueue se agrega de último y no se salta a nadie en la "fila"
+        //Además, el peek cumple con la función de no eliminar
     }
     public static void printQueue(Queue queue){
         //Función peek, toma los elementos sin eliminarlos
