@@ -1,19 +1,34 @@
 public class Quiz3 {
+    private Queue queue;
+
 
     public static void main(String[] args) {
-        // Create an empty linked list
-        LinkedList linked_list = new LinkedList();
+        Queue queue = new Queue();
 
-        // Insert some elements in the list
-        linked_list.insertFirst(3);
-        linked_list.insertFirst(8);
-        linked_list.insertFirst(9);
-        linked_list.insertFirst(1);
+        queue.enqueue(5);
+        queue.enqueue(8);
+        queue.enqueue(3);
+        queue.enqueue(12);
+        queue.enqueue(0);
+        queue.enqueue(89);
+        queue.enqueue(77);
+        System.out.println("El Queue se imprime a continuación");
+        printQueue(queue);
 
-        // Get and print the size of the list.
-        // It should match the number of elements we inserted
-        int size = linked_list.size();
+        System.out.println("\nElementos eliminados");
+        System.out.println(queue.dequeue().getData());
+        System.out.println(queue.dequeue().getData());
+        System.out.println(queue.dequeue().getData());
 
-        System.out.println(size);
+        System.out.println("\nEl Queue se imprime nuevamente");
+        printQueue(queue);
+    }
+    public static void printQueue(Queue queue){
+        Node a;
+        a = queue.peek();
+        while (a!=null){
+            System.out.println(a.getData());
+            a=a.next;
+        }
     }
 }

@@ -1,6 +1,7 @@
 public class Node {
     public Object data;
     public Node next;
+    public Node prev;
 
     public Node(Object data) {
         this.next = null;
@@ -21,5 +22,13 @@ public class Node {
 
     public void setNext(Node node) {
         this.next = node;
+    }
+
+    public Node getPrev() {
+        return this.prev;
+    }
+
+    public void setPrev(Node node) {
+        this.prev = node;
     }
 }
