@@ -4,7 +4,6 @@ public class Quiz3 {
 
     public static void main(String[] args) {
         Queue queue = new Queue();
-
         queue.enqueue(5);
         queue.enqueue(8);
         queue.enqueue(3);
@@ -12,6 +11,7 @@ public class Quiz3 {
         queue.enqueue(0);
         queue.enqueue(89);
         queue.enqueue(77);
+        
         System.out.println("El Queue se imprime a continuación");
         printQueue(queue);
 
